@@ -83,6 +83,7 @@ public class GrpcClient : MonoBehaviour
         _options = new RecognitionOptions();
         _options.SampleRate = _sampleRate;
         _options.AudioEncoding = RecognitionOptions.Types.AudioEncoding.PcmS16Le;
+        _options.EnablePartialResults = true;
     }
 
     IEnumerator MicrophoneOn()
